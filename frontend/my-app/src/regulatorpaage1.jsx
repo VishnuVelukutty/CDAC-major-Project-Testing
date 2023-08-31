@@ -1,26 +1,66 @@
-import React ,{useState} from "react";
-import { Link } from 'react-router-dom'
+import React from 'react'
 
-export const Regulatorpage =() =>{
-
-       
-
-    return(
-        <div className=" auth-from-container">
-        <form  className="login-form">
-         <button  > Request Loan</button>
-         <input type =" text" placeholder=" loan request " required/>
-         <button variant =" Approve"> Approve </button>
+function Regulatorpaage1() {
+  return (
+    <>
+       <div className='container'>
+        <div className=' col-md-12'> 
+            <table className='table table-bordered '>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>Details</th>
+                        <th>Approve</th>
+                        <th>Reject</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"></td>
+                        <td></td>
+                        <td><button type='submit' className='btn btn-success'>Approve</button></td>
+                        <td><button type='submit' className='btn btn-danger'>Reject</button></td>
+                        <td><a href='Regulatorpage2' className='btn btn-primary '>View</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         
-         <button variant =" Reject"> Reject </button>
         
-         <button variant =" New"> New </button>
-         < div  className ='text-end mt-2'>
-                New <Link to= "/Regulatorpage2" className=' ms-2' > new </Link>
-            </div>
+        
+        </div>
+        
+       </div>
 
-         
-        </form>
-   </div>
-    )
+       <div id ="top">
+            <a><a href='/Regulatorpage2'>next page</a> </a>
+            </div>  
+        
+        
+        
+    </>
+  )
 }
+
+export default Regulatorpaage1;
